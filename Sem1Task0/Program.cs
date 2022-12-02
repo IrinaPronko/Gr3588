@@ -1,22 +1,18 @@
 ﻿// Программа вывода наибольшего из двух чисел
-int numberA = 5;
-int numberB = 7;
+System.Console.WriteLine("Введите два числа!");
+System.Console.Write("первое число - ");
+string? num1line = System.Console.ReadLine();
+System.Console.Write("второе число - ");
+string? num2line = System.Console.ReadLine();
+int numberA = int.Parse(num1line);
+int numberB = int.Parse(num2line);
+System.Console.Write("Наибольшее введенное число - ");
 if(numberA > numberB)
 {
-    Console.WriteLine(numberA);
+System.Console.WriteLine(numberA);
 }
 else
 {
-    Console.WriteLine(numberB);
+System.Console.WriteLine(numberB);
 }
-// Программа вывода наибольшего из двух чисел
-int numberA = 5;
-int numberB = 7;
-if(numberA > numberB)
-{
-    Console.WriteLine(numberA);
-}
-else
-{
-    Console.WriteLine(numberB);
-}
+
